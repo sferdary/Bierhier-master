@@ -1,0 +1,67 @@
+.container, #DansTekst {
+    font-family: 'Bree Serif', serif;
+    padding: 10px;
+}
+
+.container, #DansUitslagen {
+    font-family: 'Bree Serif', serif;
+    padding: 10px;
+}
+
+#DansVideo {
+    padding: 10px;
+    width: 450px;
+    height: 270px;
+    border-bottom: none;
+    box-shadow: 0px 10px 18px black;
+}
+
+.DansTextBoxes {
+    border: 5px solid black;
+    -webkit-box-shadow: inset 0px 0px 25px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 25px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 25px 1px rgba(0, 0, 0, 0.75);
+}
+
+#DansFirstText {
+    font-size: 12px;
+    font-family: 'Cabin Condensed', sans-serif;
+    padding: 10px;
+}
+
+#DansSecondText {
+    font-size: 12px;
+    padding: 10px;
+    font-family: 'Cabin Condensed', sans-serif;
+}
+
+#DansThirdText {
+    font-size: 12px;
+    padding: 10px;
+    font-family: 'Cabin Condensed', sans-serif;
+}
+
+#HistoryDans {
+    text-align: center;
+    padding: 20px;
+    font-family: "Bree Serif", serif;
+}
+
+@media all and (max-width: 767px) {
+    div#iframe {
+        width: 100%;
+        text-align: center;
+    }
+
+    iframe#DansVideo {
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media all and (max-width: 992px) {
+    div#iframe {
+        width: 100%;
+        text-align: center;
+    }
+}

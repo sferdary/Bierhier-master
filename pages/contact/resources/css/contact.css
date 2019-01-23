@@ -1,0 +1,51 @@
+div.maps, div.addressdata, div.addresslabels, div.addresscontent {
+    float: left;
+}
+
+div.addresslabels {
+    width: auto;
+    margin-right: 20px;
+}
+
+@media all and (max-width: 990px) {
+
+    div.maps, iframe.maps {
+        width: 100%;
+        height: fit-content;
+    }
+
+    div.addressdata {
+        width: 100%;
+        height: fit-content;
+    }
+
+    div.contactform {
+        width: available;
+        height: fit-content;
+    }
+
+    div.footer {
+        width: available;
+        height: fit-content;
+    }
+}
+
+
+@media all and (min-width: 991px) {
+    div.maps, div.contactform {
+        width: 50%;
+    }
+
+    div.maps {
+        margin-right: 20px;
+    }
+
+    iframe.maps {
+        width: 100%;
+        height: auto;
+    }
+
+    div.addressdata {
+        width: 40%;
+    }
+}

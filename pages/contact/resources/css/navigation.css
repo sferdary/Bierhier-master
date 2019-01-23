@@ -1,0 +1,21 @@
+.navbar-collapse {
+    text-align: center;
+}
+
+.navbar ul li a {
+    color: #E7DFDD;
+    padding-right: 50px;
+    padding-top: 15px;
+}
+
+.navbar ul li a:hover {
+    background-color: #0E0B16;
+    box-shadow: black 0 0 50px;
+}
+.nav.nav-tabs, ul li a{
+    font-family: 'Bree Serif', serif;
+}
+
+ul {
+    flex-wrap: wrap;
+}

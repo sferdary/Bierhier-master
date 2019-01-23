@@ -1,0 +1,50 @@
+/*
+font-family: 'Bree Serif', serif; (Hoofdtekst, Onderwerpen)
+font-family: 'Vollkorn', serif; (Kopjes)
+font-family: 'Cabin Condensed', sans-serif; (Normale tekst)
+
+zwart - #0E0B16 , paars - #A239CA, blauw - #4717F6, offwhite - #E7DFDD
+Chinese Violet - #8e6c88
+*/
+
+.container, #JudoTekst {
+    font-family: 'Bree Serif', serif;
+    padding: 10px;
+}
+.container, #JudoUitslagen {
+    font-family: 'Bree Serif', serif;
+    padding: 10px;
+}
+#JudoVideo {
+    padding: 10px;
+    width: 450px;
+    height: 270px;
+    border-bottom: none;
+    box-shadow: 0px 10px 18px black;
+}
+.JudoTextBoxes {
+    border: 5px solid black;
+    -webkit-box-shadow: inset 0px 0px 25px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 25px 1px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 25px 1px rgba(0,0,0,0.75);
+}
+#JudoFirstText {
+    font-size: 12px;
+    font-family: 'Cabin Condensed', sans-serif;
+    padding: 10px;
+}
+#JudoSecondText {
+    font-size: 12px;
+    padding: 10px;
+    font-family: 'Cabin Condensed', sans-serif;
+}
+#JudoThirdText {
+    font-size: 12px;
+    padding: 10px;
+    font-family: 'Cabin Condensed', sans-serif;
+}
+#HistoryJudo {
+    text-align: center;
+    padding: 20px;
+    font-family: "Bree Serif", serif;
+}

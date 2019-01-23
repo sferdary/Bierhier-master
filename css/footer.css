@@ -1,0 +1,57 @@
+#footer {
+    padding: 10px;
+    box-shadow: 0 10px 10px black;
+    border-top: none;
+    margin-top: 20px;
+}
+
+#FooterH3 {
+    padding: 10px;
+    font-family: 'Vollkorn', serif;
+}
+.FooterHomepage {
+    list-style-type: none; !important;
+    background-color: darkgray; !important;
+}
+#FooterHome {
+    color: #A239CA;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 62px;
+    font-family: 'Bree Serif', serif;
+}
+#FooterConcerten {
+    color: #A239CA;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 30px;
+    font-family: 'Bree Serif', serif;
+}
+#FooterSport {
+    color: #A239CA;
+    padding: 10px;
+    font-family: 'Bree Serif', serif;
+}
+#FooterRecepten {
+    color: #A239CA;
+    padding: 10px;
+    font-family: 'Bree Serif', serif;
+}
+#FooterContact {
+    color: #A239CA;
+    padding: 10px;
+    font-family: 'Bree Serif', serif;
+}
+#FooterGroupPhoto {
+    float: right;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#FooterCopyright {
+    padding-left: 10px;
+    padding-top: 20px;
+    color: #0E0B16;
+    font-weight: bold;
+    font-family: 'Cabin Condensed', sans-serif;
+}
