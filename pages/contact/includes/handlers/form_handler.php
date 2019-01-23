@@ -15,10 +15,9 @@ if (isset($_POST['submit'])) {
     $email_recipient = htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8');              // Posts email          / Will be stored in a variable  / Filters invalid characters from email
     $cellphone = htmlspecialchars($_POST['cellphone'], ENT_QUOTES, 'UTF-8');                // Posts phone number   / Will be stored in a variable  /
     $comment = htmlspecialchars($_POST['comment'], ENT_QUOTES, 'UTF-8');                    // Posts the comment    / Will be stored in a variable
-    $g_recaptcha_v2 = $_POST['g-recaptcha-response'];
-    $g_recaptcha_v3 = $_POST['recaptcha_response'];
-
-    $terms_conditions = htmlspecialchars($_POST['terms_conditions'], ENT_QUOTES, 'UTF-8');                                                                // Posts agreement of terms and conditions  / Will be stored in a variable
+    $g_recaptcha_v2 = htmlspecialchars($_POST['g-recaptcha-response'], ENT_QUOTES, 'UTF-8');// Posts recaptcha response for v2  / Will be stored in a variable
+    $g_recaptcha_v3 = htmlspecialchars($_POST['recaptcha_response'], ENT_QUOTES, 'UTF-8');  // Posts recaptcha response for v3  / Will be stored in a variable
+    $terms_conditions = htmlspecialchars($_POST['terms_conditions'], ENT_QUOTES, 'UTF-8');  // Posts agreement of terms and conditions  / Will be stored in a variable
 
     $_SESSION['post_data'] = array();
     $_SESSION['post_data'] = array(

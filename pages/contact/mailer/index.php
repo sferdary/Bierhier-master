@@ -6,18 +6,17 @@
  * Time: 13:17
  */
 
+session_start();
 include_once '../includes/controllers/reCaptcha_v3_controller.php';
 use Credentials\ReCaptchaV3\reCaptcha_v3_controller;
-session_start();
 
-require_once '../vendor/autoload.php';                             // Path to the PHPMailer autoloader from composer
-require_once '../includes/error.handler.php';                      // Path to the error handler of the mail handler
-require_once '../includes/handlers/session_handler.php';                      // Path to the error handler of the mail handler
+require_once '../vendor/autoload.php';                                  // Path to the PHPMailer autoloader from composer
+require_once '../includes/handlers/session_handler.php';                // Path to the error handler of the mail handler
 
-$success = false;                                           // Success is false by default
+$success = false;                                                       // Success is false by default
 
-try {                                                           // Try to connect to the SMTP server en send the email
-    if (isset($terms_conditions)) {                              // If submit is set then require the post handler
+try {                                                                   // Try to connect to the SMTP server en send the email
+    if (isset($terms_conditions)) {                                     // If submit is set then require the post handler
         if (isset($g_recaptcha_v3)) {
 
             $reCaptcha_v3_handler = new reCaptcha_v3_controller($g_recaptcha_v3);
@@ -34,13 +33,13 @@ try {                                                           // Try to connec
     }
 
     if ($mail_company->send() && $mail_recipient->send()) {
-        $success = true;                                            // Sending thr emails is a success
+        $success = true;                                                // Sending thr emails is a success
     }
 
-} catch (Exception $e) {                                        // If there is an excpetion then it will be catched here
-    echo $mail_error, $mail_company->ErrorInfo;                 // Echoes the error message en what kind of error it is
+} catch (Exception $e) {                                                // If there is an exception then it will be catched here
+    echo $mail_error, $mail_company->ErrorInfo;                         // Echoes the error message en what kind of error it is
 }
 
-if (isset($success)) {                                         // If the mails are sended successful
-    header("Location: ../form_success.php");            // Then redirect to the success page
+if (isset($success)) {                                                  // If the mails are send successful
+    header("Location: ../form_success.php");                     // Then redirect to the success page
 }

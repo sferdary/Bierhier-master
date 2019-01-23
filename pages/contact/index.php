@@ -5,7 +5,6 @@
  * Date: 14/01/2019
  * Time: 09:26
  */
-require_once 'includes/error.handler.php';
 
 include_once 'includes/controllers/public_key_controller.php';
 
